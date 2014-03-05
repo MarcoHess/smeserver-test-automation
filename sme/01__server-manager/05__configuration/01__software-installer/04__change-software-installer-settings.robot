@@ -4,7 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 Change software installer settings
-	Unselect Frame
+    Unselect Frame
     Select Frame    navigation
     Click Link    Software installer
     Unselect Frame
