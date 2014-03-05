@@ -6,6 +6,7 @@ Documentation     A resource file with reusable keywords and variables.
 ...               by the imported Selenium2Library.
 Library           Selenium2Library
 Library           SSHLibrary
+Library           FtpLibrary
 
 *** Variables ***
 ${SERVER}         sme9-64.through-ip.com
