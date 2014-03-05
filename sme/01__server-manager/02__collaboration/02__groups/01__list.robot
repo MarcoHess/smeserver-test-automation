@@ -4,10 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Groups
-    Select Frame    navigation
-    Click Link    Groups
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Groups
     Page Should Contain    Create, modify, or remove user groups
 
 Add Group
