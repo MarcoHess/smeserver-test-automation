@@ -3,7 +3,7 @@ Documentation     Setup server manager tests
 Library           Selenium2Library
 Suite Setup       Suite Setup
 Suite Teardown    Suite Teardown
-Resource          ../../resource.robot
+Resource          ../resource.robot
 
 *** Keyword ***
 Suite Setup
