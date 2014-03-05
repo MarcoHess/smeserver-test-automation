@@ -4,10 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Information Bays Page
-    Select Frame    navigation
-    Click Link    Information bays
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Information bays
     Page Should Contain    Create, modify, or remove i-bays
 
 Add i-bay

@@ -26,6 +26,14 @@ Open Browser To Login Page
 Login Page Should Be Open
     Title Should Be    SME Server manager
 
+Click Menu 
+    [Arguments]    ${menuitem}
+    Unselect Frame
+    Select Frame    navigation
+    Click Link    ${menuitem}
+    Unselect Frame
+    Select Frame    main
+
 Go To Login Page
     Go To    ${LOGIN URL}
     Login Page Should Be Open

@@ -4,10 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Users
-    Select Frame    navigation
-    Click Link    Users
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Users
     Page Should Contain    Create, modify, or remove user accounts
 
 Add user account

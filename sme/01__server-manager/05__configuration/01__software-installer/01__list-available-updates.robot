@@ -4,11 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Available Updates
-	Unselect Frame
-    Select Frame    navigation
-    Click Link    Software installer
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Software installer
     Page Should Contain    Check for updates 
     Page Should Contain    Manage individual packages 
 

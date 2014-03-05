@@ -4,10 +4,7 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Pseudonyms
-    Select Frame    navigation
-    Click Link    Pseudonyms
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Pseudonyms
     Page Should Contain    Create, modify, or remove pseudonyms
 
 Add Pseudonyms
