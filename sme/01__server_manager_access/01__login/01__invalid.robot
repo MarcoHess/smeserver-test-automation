@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Invalid login tests.
+Documentation     Invalid Logins
 Suite Setup       Open Browser To Login Page
 Suite Teardown    Close Browser
 Test Setup        Go To Login Page

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Server Manager Access - Valid logins
+Documentation     Valid Logins
 Resource          ../../resource.robot
 
 *** Test Cases ***
