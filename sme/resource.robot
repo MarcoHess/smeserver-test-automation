@@ -28,11 +28,43 @@ Open Browser To Login Page
 Login Page Should Be Open
     Title Should Be    SME Server manager
 
-Click Menu 
+Click Menu
     [Arguments]    ${menuitem}
     Unselect Frame
     Select Frame    navigation
     Click Link    ${menuitem}
+    Unselect Frame
+    Select Frame    main
+
+Click Link In Frame
+    [Documentation]     When clicking links in a frame that subsequently gets
+    ...                 reloaded, we need to select away from the frame and
+    ...                 reselect it to allow Selenium to see the elements of
+    ...                 reloaded frame.
+    [Arguments]    ${link}
+    Unselect Frame
+    Select Frame    navigation
+    Unselect Frame
+    Select Frame    main
+    Click Link      ${link}
+    Unselect Frame
+    Select Frame    navigation
+    Unselect Frame
+    Select Frame    main
+
+Click Button In Frame
+    [Documentation]     When clicking button in a frame that subsequently gets
+    ...                 reloaded, we need to select away from the frame and
+    ...                 reselect it to allow Selenium to see the elements of
+    ...                 reloaded frame.
+    [Arguments]    ${button}
+    Unselect Frame
+    Select Frame    navigation
+    Unselect Frame
+    Select Frame    main
+    Click Button    ${button}
+    Unselect Frame
+    Select Frame    navigation
     Unselect Frame
     Select Frame    main
 
