@@ -9,11 +9,13 @@ Library           SSHLibrary
 Library           FtpLibrary
 
 *** Variables ***
-${SERVER}         sme9-64.through-ip.com
+${SERVER NAME}    sme9-64
+${SERVER DOMAIN}  through-ip.com
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     admin
 ${VALID PASSWORD}    Admin-Test-1234
+${SERVER}         ${SERVER NAME}.${SERVER DOMAIN}
 ${LOGIN URL}      https://${SERVER}/server-manager
 ${WELCOME URL}    https://${SERVER}/server-manager/
 ${ERROR URL}      https://${SERVER}/server-common/cgi-bin/login
