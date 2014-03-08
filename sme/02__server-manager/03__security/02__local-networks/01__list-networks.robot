@@ -4,14 +4,8 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Local Networks
-    Unselect Frame
-    Select Frame    navigation
-    Click Link    Local networks
-    Unselect Frame
-    Select Frame    main
+    Click Menu      Local networks
     Page Should Contain    Local networks
 
 Add Network
-    Unselect Frame
-    Select Frame    main
-    Click Link	Add network
+    Click Link In Frame	Add network

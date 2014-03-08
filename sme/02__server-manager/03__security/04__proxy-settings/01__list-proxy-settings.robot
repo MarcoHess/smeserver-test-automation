@@ -4,10 +4,6 @@ Resource          ../../../resource.robot
 
 *** Test Cases ***
 List Proxy Settings
-    Unselect Frame
-    Select Frame    navigation
-    Click Link    Proxy settings
-    Unselect Frame
-    Select Frame    main
+    Click Menu    Proxy settings
     Page Should Contain    Proxy settings
 
