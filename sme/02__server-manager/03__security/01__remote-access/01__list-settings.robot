@@ -3,11 +3,10 @@ Documentation     Security - Remote access
 Resource          ../../../resource.robot
 
 *** Test Cases ***
-List Available Updates
-    Unselect Frame
-    Select Frame    navigation
-    Click Link    Remote access
-    Unselect Frame
-    Select Frame    main
+List Remote Access Setting
+    Click Menu    Remote access
+    Page Should Contain    Change remote access settings
+    
+PPTP Settings
     Page Should Contain    Change remote access settings
 
