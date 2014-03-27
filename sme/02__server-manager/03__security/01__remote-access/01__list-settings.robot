@@ -3,13 +3,9 @@ Documentation              Security - Remote access
 Resource                   ../../../resource.robot
 
 *** Test Cases ***
-List Remote Access Setting
+List Remote Access Settings
     Click Menu                Remote access
-    Page Should Contain       Change remote access settings
     List Selection Should Be  sshAccess                  No Access
     List Selection Should Be  sshPermitRootLogin         No
     List Selection Should Be  sshPasswordAuthentication  No
-    
-PPTP Settings
-    Page Should Contain    Change remote access settings
-
+    Page Should Contain       Change remote access settings

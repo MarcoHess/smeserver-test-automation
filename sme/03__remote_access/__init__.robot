@@ -1,5 +1,6 @@
 *** Settings ***
-Documentation     Setup server manager tests
+Documentation     Configure remote access in server manager
+...               to allow the SSH and FTP tests.
 Library           Selenium2Library
 Suite Setup       Suite Setup
 Suite Teardown    Suite Teardown
