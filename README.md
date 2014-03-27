@@ -1,20 +1,23 @@
 SME Server Test Automation
 ==========================
 
-This repository is a series of tests build on the Robot Framework (http://robotframework.org) for 
-performing a series of tests on SME Server (http://contribs.org).
+This repository is a series of tests build on the Robot Framework 
+(http://robotframework.org) for performing a series of tests on 
+SME Server (http://contribs.org).
 
-There are some further instructions on how to operate these tests in SME Server 
-here http://wiki.contribs.org/Robotframework.
+There are some further instructions on how to operate these 
+tests in SME Server here http://wiki.contribs.org/Robotframework.
 
 Robot Framework
 ---------------
 
-Follow the instructions from https://code.google.com/p/robotframework/wiki/Installation to
-install the Robot Framework on the development machine where you run the tests from.
+Follow the instructions from 
+https://code.google.com/p/robotframework/wiki/Installation to install 
+the Robot Framework on the development machine where you run the tests from.
 
-Assuming that after you installed the framwork you have the Python package installer 'pip'
-available, install the following additional robotframework libraries using 'pip':
+Assuming that after you installed the framwork you have the Python 
+package installer 'pip' available, install the following additional
+robotframework libraries using 'pip':
 
 ```
 pip install robotframework-selenium2library
@@ -86,10 +89,7 @@ Contributing to SME Server Test Automation
 It would be great if you could add and expand on these tests to build these tests
 towards a comprehensive acceptance test suite for SME Server releases.
 
-There is a greate description on GitHub for the process of contributing to a project:
-
+There is a great description on GitHub for the process of contributing to a project:
 https://help.github.com/articles/fork-a-repo
-
-
 
 
