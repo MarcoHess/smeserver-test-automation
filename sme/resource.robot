@@ -75,23 +75,49 @@ Go To Login Page
     Login Page Should Be Open
 
 Input Username
-    [Arguments]    ${username}
-    Input Text    username    ${username}
+    [Arguments]               ${username}
+    Input Text                username    ${username}
 
 Input Password
-    [Arguments]    ${password}
-    Input Text    password    ${password}
+    [Arguments]               ${password}
+    Input Text                password    ${password}
 
 Submit Credentials
-    Click Button    Login
+    Click Button              Login
 
 Open Browser To Welcome Page
-    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Open Browser              ${WELCOME URL}    ${BROWSER}
 
 Welcome Page Should Be Open
-    Location Should Be    ${WELCOME URL}
-    Title Should Be    SME Server ${SERVER}
+    Location Should Be        ${WELCOME URL}
+    Title Should Be           SME Server ${SERVER}
 
 Users Frame Should Be Open
-    Location Should Be    ${USERS URL}
-    Frame Should Contain    main    "Create, modify, or remove user accounts"
+    Location Should Be        ${USERS URL}
+    Frame Should Contain      main    "Create, modify, or remove user accounts"
+
+Enable SSH Access
+    Click Menu                Remote access
+    Select From List          sshAccess                  Allow access only from local networks
+    Select From List          sshPermitRootLogin         Yes
+    Select From List          sshPasswordAuthentication  Yes
+    Click Button In Frame     Save
+
+Disable SSH Access
+    Click Menu                Remote access
+    Select From List          sshAccess                  No Access
+    Select From List          sshPermitRootLogin         No
+    Select From List          sshPasswordAuthentication  No
+    Click Button In Frame     Save
+
+Enable FTP Access
+    Click Menu                Remote access
+    Select From List          FTPAccess                  Allow access only from local networks
+    Select From List          FTPPasswordLogin           Accept passwords only from local networks
+    Click Button In Frame     Save
+
+Disable FTP Access
+    Click Menu                Remote access
+    Select From List          FTPAccess                  No Access
+    Select From List          FTPPasswordLogin           Accept passwords only from local networks
+    Click Button In Frame     Save

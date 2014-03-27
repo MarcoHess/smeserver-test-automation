@@ -30,4 +30,4 @@ Executing Commands In An Interactive Session
 *** Keywords ***
 Open Connection And Log In
     Open Connection   ${SERVER}
-    Login   root    ${VALID PASSWORD}
+    Login             root    ${VALID PASSWORD}
