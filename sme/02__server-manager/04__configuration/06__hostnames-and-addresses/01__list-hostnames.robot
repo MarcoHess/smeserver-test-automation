@@ -1,6 +1,6 @@
 *** Settings ***
-Documentation     Configuration - Hostnames and addresses
-Resource          ../../../resource.robot
+Documentation                 Configuration - Hostnames and addresses
+Resource                      ../../../resource.robot
 
 *** Test Cases ***
 List Hostnames
@@ -16,14 +16,14 @@ List Hostnames
     Page Should Contain       www.${SERVER DOMAIN}
 
 Add Self Hostname RobotTest
-    [Documentation]           Add a self domain 'robottest' using the
+    [Documentation]           Add a self hostname 'robottest' using the
     ...                      'Add hostname' form.
     Click Menu                Hostnames and addresses
     Click Link In Frame       Add hostname
-    List Selection Should Be  domain    ${SERVER DOMAIN}
+    List Selection Should Be  domain      ${SERVER DOMAIN}
     List Selection Should Be  hosttype    Self
-    Input Text                name    robottest
-    Input Text                comment   Added by Robot Framework Tests
+    Input Text                name        robottest
+    Input Text                comment     Added by Robot Framework Tests
     Click Button In Frame     Next
     Page Should Contain       robottest
     Page Should Contain       ${SERVER DOMAIN}
