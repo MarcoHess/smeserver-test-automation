@@ -8,6 +8,15 @@ SME Server (http://contribs.org).
 There are some further instructions on how to operate these 
 tests in SME Server here http://wiki.contribs.org/Robotframework.
 
+The current status of these test suites is that it mainly 
+excersize the server manager pages and are able to access the
+server under test using SSH and FTP but at this stage there is
+not a lot of real testing going on.
+
+We hope to expand on that soon and would welcome contributions
+towards this (even if it is only some suggested test sequences).
+
+
 Robot Framework
 ---------------
 

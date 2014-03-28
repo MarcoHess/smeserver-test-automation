@@ -1,8 +1,9 @@
 *** Settings ***
-Documentation     FTP Connect
-Resource          ../../resource.robot
-Suite Setup       Open Connection And Log In
-Suite Teardown    Ftp Close
+Documentation                 FTP Connect
+Force Tags                    ftp
+Resource                      ../../resource.robot
+Suite Setup                   Open Connection And Log In
+Suite Teardown                Ftp Close
 
 *** Test Cases ***
 Get Welcome Message

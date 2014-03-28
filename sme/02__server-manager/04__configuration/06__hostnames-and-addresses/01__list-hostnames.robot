@@ -1,5 +1,8 @@
 *** Settings ***
 Documentation                 Configuration - Hostnames and addresses
+Force Tags                    server-manager
+...                           configuration
+...                           hostnames
 Resource                      ../../../resource.robot
 
 *** Test Cases ***

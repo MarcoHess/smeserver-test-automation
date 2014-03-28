@@ -1,8 +1,9 @@
 *** Settings ***
-Documentation     SSH Connect
-Resource          ../../resource.robot
-Suite Setup       Open Connection And Log In
-Suite Teardown    Close All Connections
+Documentation                 SSH Connect
+Force Tags                    ssh
+Resource                      ../../resource.robot
+Suite Setup                   Open Connection And Log In
+Suite Teardown                Close All Connections
 
 *** Test Cases ***
 Execute Command And Verify Output

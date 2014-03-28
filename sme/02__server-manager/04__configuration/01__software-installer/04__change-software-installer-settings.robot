@@ -1,27 +1,31 @@
 *** Settings ***
-Documentation     Change software installer settings
-...               Click Button xpath=//input[contains(@type,'submit')]
-Resource          ../../../resource.robot
+Documentation              Change software installer settings
+...                        Click Button xpath=//input[contains(@type,'submit')]
+Force Tags                 server-manager
+...                        configuration
+...                        software-installer
+...                        yum
+Resource                   ../../../resource.robot
 
 *** Test Cases ***
 Change software installer settings
-    Click Menu    Software installer
+    Click Menu             Software installer
     Click Link In Frame    Change software installer settings
-    Select From List    yum_check4updates    Daily
-    Select From List    yum_PackageFunctions    Disabled
-    Click Button In Frame    Save
+    Select From List       yum_check4updates    Daily
+    Select From List       yum_PackageFunctions    Disabled
+    Click Button In Frame  Save
     Page Should Contain    The new settings have been saved.
-    Click Menu    Software installer
+    Click Menu             Software installer
     Wait Until Page Contains    Software installer  60
 
 Check for updates weekly
-    Click Menu    Software installer
+    Click Menu             Software installer
     Click Link In Frame    Change software installer settings
     List Selection Should Be    yum_check4updates    Daily
-    Select From List    yum_check4updates    Weekly
-    Click Button In Frame    Save
+    Select From List       yum_check4updates    Weekly
+    Click Button In Frame  Save
     Page Should Contain    The new settings have been saved.
-    Click Menu    Software installer
+    Click Menu             Software installer
     Wait Until Page Contains    Software installer  60
     Click Link In Frame    Change software installer settings
     List Selection Should Be    yum_check4updates    Weekly

@@ -1,5 +1,8 @@
 *** Settings ***
 Documentation                 Configuration - Domains
+Force Tags                    server-manager
+...                           configuration
+...                           domains
 Resource                      ../../../resource.robot
 
 *** Test Cases ***
@@ -28,6 +31,7 @@ Add Domain RobotTest
 
 Check Domain Hostnames
     [Documentation]           Check default host names for domain 'robottest.org'
+    [Tags]                    hostnames
     Click Menu                Hostnames and addresses
     Page Should Contain       Hostnames and address
     Page Should Contain       ${SERVER}

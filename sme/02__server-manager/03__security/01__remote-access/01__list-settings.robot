@@ -1,6 +1,11 @@
 *** Settings ***
-Documentation              Security - Remote access
-Resource                   ../../../resource.robot
+Documentation                 Security - Remote access
+Force Tags                    server-manager
+...                           security
+...                           remote-access
+...                           ssh
+...                           ftp
+Resource                      ../../../resource.robot
 
 *** Test Cases ***
 List Remote Access Settings

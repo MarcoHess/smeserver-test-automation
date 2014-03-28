@@ -1,11 +1,15 @@
 *** Settings ***
-Documentation     Security - Port forwarding
-Resource          ../../../resource.robot
+Documentation              Security - Port forwarding
+Force Tags                 server-manager
+...                        security
+...                        ports
+Resource                   ../../../resource.robot
 
 *** Test Cases ***
-List Local Networks
-    Click Menu    Port forwarding
+List Local Forwarding Ports
+    Click Menu             Port forwarding
     Page Should Contain    Configure Port Forwarding
 
-Add Network
+Add Forwarding Port
+    Click Menu             Port forwarding
     Click Link In Frame     Create portforwarding rule
